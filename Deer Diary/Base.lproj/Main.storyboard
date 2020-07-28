@@ -7,20 +7,184 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.18531864880000001" green="0.40192919970000002" blue="0.2470350862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.28627450980392155" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="119"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="Dpq-Hr-E7w">
+            <objects>
+                <viewController id="ug3-d1-DeV" customClass="ProfileVC" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HNH-sl-RGX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="T8R-YO-SpA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPk-Ib-Kcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="-637"/>
+        </scene>
+        <!--Welcome PageVC-->
+        <scene sceneID="zIg-5H-zHA">
+            <objects>
+                <viewController id="Tbk-Ei-azW" customClass="WelcomePageVC" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qiI-Rj-bvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1Du-sv-doq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJh-sE-NgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="660-PL-DZP">
+            <objects>
+                <viewController id="cte-eI-Mfl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BXX-Pr-rzq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq5-ze-slZ">
+                                <rect key="frame" x="20" y="146" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Notebook"/>
+                                <connections>
+                                    <segue destination="wHM-Ly-seN" kind="show" id="HSx-yx-M3f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfH-Bs-MNo">
+                                <rect key="frame" x="9" y="117" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJH-UZ-g67">
+                                <rect key="frame" x="29" y="242" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="World Calendar"/>
+                                <connections>
+                                    <segue destination="44i-Eb-YHD" kind="show" id="PQo-RM-nH8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-e6-xh1">
+                                <rect key="frame" x="9" y="213" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mms-Jk-lel">
+                                <rect key="frame" x="0.0" y="77" width="414" height="819"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-EU-v56">
+                                <rect key="frame" x="30" y="280" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Resources"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3n2-2m-UlT" firstAttribute="top" secondItem="Mms-Jk-lel" secondAttribute="top" constant="11" id="Fpe-sq-iod"/>
+                            <constraint firstItem="3n2-2m-UlT" firstAttribute="trailing" secondItem="Mms-Jk-lel" secondAttribute="trailing" id="XGd-XL-GQl"/>
+                            <constraint firstItem="Mms-Jk-lel" firstAttribute="leading" secondItem="3n2-2m-UlT" secondAttribute="leading" id="ghZ-ZH-SIU"/>
+                            <constraint firstItem="Mms-Jk-lel" firstAttribute="bottom" secondItem="3n2-2m-UlT" secondAttribute="bottom" constant="83" id="yht-rz-pgw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3n2-2m-UlT"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Fj8-ys-jZI"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="Dbh-g5-4jf">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="gV5-EP-olc"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kb-Qs-e9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="825"/>
+        </scene>
+        <!--Home PageVC-->
+        <scene sceneID="Soa-0m-BIi">
+            <objects>
+                <viewController id="t8G-5h-UNV" customClass="HomePageVC" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnI-S8-g6T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Lz5-CM-xVt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvS-gp-uHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="121"/>
+        </scene>
+        <!--The WorldVC-->
+        <scene sceneID="e3o-gG-oRa">
+            <objects>
+                <viewController id="44i-Eb-YHD" customClass="TheWorldVC" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cU5-ao-poV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="AGS-EJ-zBk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hox-bQ-aIm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdD-SC-bZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="512"/>
+        </scene>
+        <!--My WorldVC-->
+        <scene sceneID="aiu-NZ-tYR">
+            <objects>
+                <viewController id="wHM-Ly-seN" customClass="MyWorldVC" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sz2-Qj-ivg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JYK-m4-36C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NwU-sB-eNY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6z-zZ-C0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="-296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KJX-1L-NOE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G2T-Uy-qeU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JZo-1p-Ee3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cte-eI-Mfl" kind="relationship" relationship="rootViewController" id="C6t-gX-1w6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfQ-pn-QQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="825"/>
         </scene>
     </scenes>
 </document>

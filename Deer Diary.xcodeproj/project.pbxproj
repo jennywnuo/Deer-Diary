@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EB94E9E24D0CD31002C9331 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94E9D24D0CD31002C9331 /* WelcomePageVC.swift */; };
+		8EB94EA024D0CDA8002C9331 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94E9F24D0CDA8002C9331 /* HomePageVC.swift */; };
+		8EB94EA224D0CDDD002C9331 /* MyWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EA124D0CDDD002C9331 /* MyWorldVC.swift */; };
+		8EB94EA424D0CE20002C9331 /* TheWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EA324D0CE20002C9331 /* TheWorldVC.swift */; };
+		8EB94EA624D0CE54002C9331 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EA524D0CE54002C9331 /* ProfileVC.swift */; };
+		8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */; };
 		BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787924D0C21E0073FED3 /* AppDelegate.swift */; };
 		BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */; };
-		BA3E787E24D0C21E0073FED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787D24D0C21E0073FED3 /* ViewController.swift */; };
 		BA3E788124D0C21E0073FED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3E787F24D0C21E0073FED3 /* Main.storyboard */; };
 		BA3E788424D0C21E0073FED3 /* Deer_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3E788224D0C21E0073FED3 /* Deer_Diary.xcdatamodeld */; };
 		BA3E788624D0C2200073FED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3E788524D0C2200073FED3 /* Assets.xcassets */; };
@@ -36,10 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EB94E9D24D0CD31002C9331 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
+		8EB94E9F24D0CDA8002C9331 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		8EB94EA124D0CDDD002C9331 /* MyWorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldVC.swift; sourceTree = "<group>"; };
+		8EB94EA324D0CE20002C9331 /* TheWorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWorldVC.swift; sourceTree = "<group>"; };
+		8EB94EA524D0CE54002C9331 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA3E787624D0C21E0073FED3 /* Deer Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deer Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3E787924D0C21E0073FED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA3E787D24D0C21E0073FED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA3E788024D0C21E0073FED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA3E788324D0C21E0073FED3 /* Deer_Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Deer_Diary.xcdatamodel; sourceTree = "<group>"; };
 		BA3E788524D0C2200073FED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EB94EA924D0D3C6002C9331 /* Nav Bar VCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Nav Bar VCs";
+			sourceTree = "<group>";
+		};
+		8EB94EB224D0D470002C9331 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EB94EA524D0CE54002C9331 /* ProfileVC.swift */,
+				8EB94EA324D0CE20002C9331 /* TheWorldVC.swift */,
+				8EB94EA124D0CDDD002C9331 /* MyWorldVC.swift */,
+				8EB94E9F24D0CDA8002C9331 /* HomePageVC.swift */,
+				8EB94E9D24D0CD31002C9331 /* WelcomePageVC.swift */,
+				8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		BA3E786D24D0C21E0073FED3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +131,10 @@
 		BA3E787824D0C21E0073FED3 /* Deer Diary */ = {
 			isa = PBXGroup;
 			children = (
+				8EB94EB224D0D470002C9331 /* View Controllers */,
+				8EB94EA924D0D3C6002C9331 /* Nav Bar VCs */,
 				BA3E787924D0C21E0073FED3 /* AppDelegate.swift */,
 				BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */,
-				BA3E787D24D0C21E0073FED3 /* ViewController.swift */,
 				BA3E787F24D0C21E0073FED3 /* Main.storyboard */,
 				BA3E788524D0C2200073FED3 /* Assets.xcassets */,
 				BA3E788724D0C2200073FED3 /* LaunchScreen.storyboard */,
@@ -262,9 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3E787E24D0C21E0073FED3 /* ViewController.swift in Sources */,
+				8EB94E9E24D0CD31002C9331 /* WelcomePageVC.swift in Sources */,
+				8EB94EA224D0CDDD002C9331 /* MyWorldVC.swift in Sources */,
+				8EB94EA624D0CE54002C9331 /* ProfileVC.swift in Sources */,
+				8EB94EA024D0CDA8002C9331 /* HomePageVC.swift in Sources */,
 				BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */,
+				8EB94EA424D0CE20002C9331 /* TheWorldVC.swift in Sources */,
 				BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */,
+				8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */,
 				BA3E788424D0C21E0073FED3 /* Deer_Diary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
