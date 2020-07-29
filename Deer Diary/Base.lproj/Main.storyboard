@@ -176,11 +176,8 @@
                         <viewLayoutGuide key="safeArea" id="Mma-6w-SYp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="HZj-g7-Tei">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menuBar" id="4JI-L2-WGK">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="4JI-L2-WGK">
                             <color key="tintColor" red="0.12549019610000001" green="0.28627450980000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="nS1-dX-Fhx" kind="show" id="v9F-Hw-9b8"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -193,9 +190,10 @@
             <objects>
                 <tableViewController id="nS1-dX-Fhx" customClass="MenuViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yhA-2p-A0d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="TpJ-dj-vuq">
                                 <cells>
@@ -379,7 +377,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menuBar" width="50" height="50"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="myWorldShelf" width="50" height="50"/>
         <image name="settings" width="50" height="50"/>
         <image name="theWorld" width="50" height="50"/>
