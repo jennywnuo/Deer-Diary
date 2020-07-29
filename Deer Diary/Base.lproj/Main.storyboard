@@ -178,6 +178,9 @@
                     <navigationItem key="navigationItem" title="Home" id="HZj-g7-Tei">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="4JI-L2-WGK">
                             <color key="tintColor" red="0.12549019610000001" green="0.28627450980000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapMenu:" destination="nCj-aU-SiW" id="nni-Dv-3Y7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -188,7 +191,7 @@
         <!--Menu View Controller-->
         <scene sceneID="ekm-qL-6Ar">
             <objects>
-                <tableViewController id="nS1-dX-Fhx" customClass="MenuViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuViewController" id="nS1-dX-Fhx" customClass="MenuViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yhA-2p-A0d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
