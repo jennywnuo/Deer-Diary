@@ -13,8 +13,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
+    //default val is displayed on welcome page
+    //can't figure out how to make it dynamic
+    var userName = "Jenny"
+    
     @IBAction func loginTapped(_ sender: UIButton) {
         if usernameText.text == "Jenny" && passwordText.text == "fakepw" {
+            
+            userName = "Jenny"
+            
+            self.performSegue(withIdentifier: "goToWelcomePage", sender: self)
+            
             print("successful login") //for testing purposes
         }
         else {
@@ -29,7 +38,7 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -37,6 +46,6 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
