@@ -14,13 +14,112 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deer Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-mB-Wfn">
+                                <rect key="frame" x="132" y="237" width="150" height="37"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-q3-atT">
+                                <rect key="frame" x="49" y="300" width="316" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Username">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="Charter-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3y-cR-8bV">
+                                <rect key="frame" x="49" y="355" width="316" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Password">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="Charter-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AuF-Ba-uDf">
+                                <rect key="frame" x="49" y="419" width="316" height="36.5"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.66274509800000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log In">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="20" name="Charter-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gM0-ei-2CX"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kzx-xT-CXm">
+                                <rect key="frame" x="84" y="469.5" width="246" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eei-uW-1cd">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Don't have an account?">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="17" name="Charter-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHA-fU-92n">
+                                        <rect key="frame" x="191" y="0.0" width="55" height="31"/>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="15"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.80784313730000001" green="0.66274509800000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.28627450980392155" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kzx-xT-CXm" secondAttribute="trailing" constant="84" id="02a-GK-aNd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dff-mB-Wfn" secondAttribute="trailing" constant="132" id="0xY-qO-eXg"/>
+                            <constraint firstItem="Dff-mB-Wfn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="2a7-Sj-nTf"/>
+                            <constraint firstItem="Dff-mB-Wfn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="2pC-7A-sGM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OjI-q3-atT" secondAttribute="trailing" constant="49" id="6YP-7g-q2t"/>
+                            <constraint firstItem="kzx-xT-CXm" firstAttribute="top" secondItem="AuF-Ba-uDf" secondAttribute="bottom" constant="14" id="LRu-Xi-H9J"/>
+                            <constraint firstItem="AuF-Ba-uDf" firstAttribute="top" secondItem="G3y-cR-8bV" secondAttribute="bottom" constant="30" id="ZNN-kw-IwU"/>
+                            <constraint firstItem="G3y-cR-8bV" firstAttribute="top" secondItem="OjI-q3-atT" secondAttribute="bottom" constant="21" id="cA2-zU-TPN"/>
+                            <constraint firstItem="AuF-Ba-uDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="fBk-yq-The"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G3y-cR-8bV" secondAttribute="trailing" constant="49" id="h8R-k7-tSL"/>
+                            <constraint firstItem="OjI-q3-atT" firstAttribute="top" secondItem="Dff-mB-Wfn" secondAttribute="bottom" constant="26" id="iyV-fG-Z28"/>
+                            <constraint firstItem="kzx-xT-CXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="lhN-VA-ExX"/>
+                            <constraint firstItem="OjI-q3-atT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="oAD-FS-dTU"/>
+                            <constraint firstItem="G3y-cR-8bV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="oHz-3U-ekF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AuF-Ba-uDf" secondAttribute="trailing" constant="49" id="wxt-ao-dx9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordText" destination="G3y-cR-8bV" id="qLn-N9-KDa"/>
+                        <outlet property="usernameText" destination="OjI-q3-atT" id="Ct4-5e-pmb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="119"/>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="Dpq-Hr-E7w">
@@ -29,13 +128,26 @@
                     <view key="view" contentMode="scaleToFill" id="HNH-sl-RGX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qlO-gJ-Jrp">
+                                <rect key="frame" x="127" y="89" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-Xc-SqM">
+                                <rect key="frame" x="186" y="288" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="T8R-YO-SpA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPk-Ib-Kcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="-637"/>
+            <point key="canvasLocation" x="924.63768115942037" y="-637.5"/>
         </scene>
         <!--Welcome PageVC-->
         <scene sceneID="zIg-5H-zHA">
