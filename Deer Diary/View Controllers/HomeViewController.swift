@@ -48,7 +48,12 @@ class HomeViewController: UIViewController {
         topView?.removeFromSuperview()
         switch menuType {
         case .myWorld:
+            /*let myWorldVC = MyWorldViewController()
+            view.addSubview(myWorldVC.view)
+            self.topView = myWorldVC.view
+            addChild(myWorldVC)*/
             let view = UIView()
+            self.performSegue(withIdentifier: "goToMyWorld", sender: self)
             view.frame = self.view.bounds
             self.view.addSubview(view)
             self.view.backgroundColor = UIColor(displayP3Red: 171/255, green: 164/255, blue: 152/255, alpha: 1)
@@ -57,6 +62,7 @@ class HomeViewController: UIViewController {
             view.frame = self.view.bounds
             self.view.addSubview(view)
             self.view.backgroundColor = UIColor(displayP3Red: 171/255, green: 164/255, blue: 152/255, alpha: 1)
+            self.performSegue(withIdentifier: "goToTheWorld", sender: self)
         case .settings:
             let view = UIView()
             view.frame = self.view.bounds

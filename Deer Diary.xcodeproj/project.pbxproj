@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		8E07457024D1A11D00F647A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07456F24D1A11D00F647A6 /* HomeViewController.swift */; };
 		8E07457224D1A27300F647A6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07457124D1A27300F647A6 /* MenuViewController.swift */; };
+		8E9EB38524D34C9C0019B27A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */; };
+		8E9EB38724D34CE60019B27A /* ScrollStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */; };
+		8E9EB38924D351A00019B27A /* MyWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38824D351A00019B27A /* MyWorldViewController.swift */; };
+		8E9EB38B24D366D30019B27A /* TheWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38A24D366D30019B27A /* TheWorldViewController.swift */; };
 		8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */; };
 		8ECB9F8024D1969E001AC428 /* WelcomePgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */; };
+		8EE6C30524D308DE001C723B /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6C30424D308DE001C723B /* Interest.swift */; };
+		8EE6C30824D32C6B001C723B /* WorldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6C30624D32C6B001C723B /* WorldCollectionViewCell.swift */; };
+		8EE6C30924D32C6B001C723B /* WorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6C30724D32C6B001C723B /* WorldViewController.swift */; };
 		8EEF0F3924D1FD4E00D03D34 /* SlideinTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */; };
 		BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787924D0C21E0073FED3 /* AppDelegate.swift */; };
 		BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */; };
@@ -42,8 +49,15 @@
 /* Begin PBXFileReference section */
 		8E07456F24D1A11D00F647A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E07457124D1A27300F647A6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStepViewController.swift; sourceTree = "<group>"; };
+		8E9EB38824D351A00019B27A /* MyWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldViewController.swift; sourceTree = "<group>"; };
+		8E9EB38A24D366D30019B27A /* TheWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWorldViewController.swift; sourceTree = "<group>"; };
 		8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePgViewController.swift; sourceTree = "<group>"; };
+		8EE6C30424D308DE001C723B /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		8EE6C30624D32C6B001C723B /* WorldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldCollectionViewCell.swift; path = "/Users/clarahung/Documents/Deer-Diary/Deer Diary/WorldCollectionViewCell.swift"; sourceTree = "<absolute>"; };
+		8EE6C30724D32C6B001C723B /* WorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldViewController.swift; path = "/Users/clarahung/Documents/Deer-Diary/Deer Diary/WorldViewController.swift"; sourceTree = "<absolute>"; };
 		8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideinTransition.swift; sourceTree = "<group>"; };
 		BA3E787624D0C21E0073FED3 /* Deer Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deer Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3E787924D0C21E0073FED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,11 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E9EB38324D34AAF0019B27A /* Failed Tutorial Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6C30724D32C6B001C723B /* WorldViewController.swift */,
+				8EE6C30624D32C6B001C723B /* WorldCollectionViewCell.swift */,
+				8EE6C30424D308DE001C723B /* Interest.swift */,
+			);
+			path = "Failed Tutorial Files";
+			sourceTree = "<group>";
+		};
 		8EB94EB224D0D470002C9331 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */,
 				8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */,
+				8E07456F24D1A11D00F647A6 /* HomeViewController.swift */,
+				8E07457124D1A27300F647A6 /* MenuViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -121,14 +147,17 @@
 				8EB94EB224D0D470002C9331 /* View Controllers */,
 				BA3E787924D0C21E0073FED3 /* AppDelegate.swift */,
 				BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */,
-				8E07456F24D1A11D00F647A6 /* HomeViewController.swift */,
 				8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */,
+				8E9EB38824D351A00019B27A /* MyWorldViewController.swift */,
 				BA3E787F24D0C21E0073FED3 /* Main.storyboard */,
-				8E07457124D1A27300F647A6 /* MenuViewController.swift */,
+				8E9EB38A24D366D30019B27A /* TheWorldViewController.swift */,
+				8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */,
+				8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */,
 				BA3E788524D0C2200073FED3 /* Assets.xcassets */,
 				BA3E788724D0C2200073FED3 /* LaunchScreen.storyboard */,
 				BA3E788A24D0C2200073FED3 /* Info.plist */,
 				BA3E788224D0C21E0073FED3 /* Deer_Diary.xcdatamodeld */,
+				8E9EB38324D34AAF0019B27A /* Failed Tutorial Files */,
 			);
 			path = "Deer Diary";
 			sourceTree = "<group>";
@@ -282,14 +311,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE6C30924D32C6B001C723B /* WorldViewController.swift in Sources */,
+				8E9EB38B24D366D30019B27A /* TheWorldViewController.swift in Sources */,
 				BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */,
+				8EE6C30824D32C6B001C723B /* WorldCollectionViewCell.swift in Sources */,
+				8E9EB38924D351A00019B27A /* MyWorldViewController.swift in Sources */,
 				BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */,
 				8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */,
+				8E9EB38724D34CE60019B27A /* ScrollStepViewController.swift in Sources */,
 				8E07457224D1A27300F647A6 /* MenuViewController.swift in Sources */,
 				8ECB9F8024D1969E001AC428 /* WelcomePgViewController.swift in Sources */,
+				8E9EB38524D34C9C0019B27A /* ScrollViewController.swift in Sources */,
 				8EEF0F3924D1FD4E00D03D34 /* SlideinTransition.swift in Sources */,
 				BA3E788424D0C21E0073FED3 /* Deer_Diary.xcdatamodeld in Sources */,
 				8E07457024D1A11D00F647A6 /* HomeViewController.swift in Sources */,
+				8EE6C30524D308DE001C723B /* Interest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
