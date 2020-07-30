@@ -12,9 +12,10 @@ class SlideinTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     //flag
     var isPresenting = false
+    let dimmingView = UIView()
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 3.0
+        return 0.5
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -24,10 +25,14 @@ class SlideinTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView
         
         let finalWidth = toViewController.view.bounds.width * 0.8
-        let finalHeight = toViewController.view.bounds.width
+        let finalHeight = toViewController.view.bounds.height
         
         if isPresenting {
+            dimmingView.backgroundColor = .black
+            dimmingView.alpha = 0.0
             //add menu VC to container
+            containerView.addSubview(dimmingView)
+            dimmingView.frame = containerView.bounds
             containerView.addSubview(toViewController.view)
             
             //init frame off screen
@@ -36,11 +41,13 @@ class SlideinTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         //animate on to screen
         let transform = {
+            self.dimmingView.alpha = 0.5
             toViewController.view.transform = CGAffineTransform(translationX: finalWidth, y: 0)
         }
         
         //animate back off screen
         let identity = {
+            self.dimmingView.alpha = 0.0
             fromViewController.view.transform = .identity
         }
         
