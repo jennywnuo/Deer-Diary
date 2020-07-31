@@ -16,8 +16,4 @@ class EventCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var eventDescription: UILabel!
     
-    
-    @IBAction func learnBtn(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string:"https://issuesintheworld.carrd.co/")!)
-    }
 }

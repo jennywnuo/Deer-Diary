@@ -236,8 +236,12 @@
                                                     <state key="normal" title="Learn More">
                                                         <color key="titleColor" red="0.91764705879999997" green="0.87450980389999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="learnBtn:" destination="8pO-mz-nxI" eventType="touchUpInside" id="c3g-Nb-Jvl"/>
+                                                        <action selector="learnBtnPressed:" destination="U11-nD-h8Q" eventType="touchUpInside" id="jpx-ig-iSL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

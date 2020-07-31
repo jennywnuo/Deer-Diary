@@ -15,10 +15,18 @@ class TheWorldViewController: UIViewController, UICollectionViewDelegate, UIColl
     let eventImage = [UIImage(named: "yemen"), UIImage(named: "portland"), UIImage(named: "breonna"), UIImage(named: "hongkong"), UIImage(named: "uighurs")]
     
     let eventDescription = ["A brutal civil war is ravaging Yemen even amid COVID-19. Its people are among the most vulnerable to war and sickness.", "Peaceful protestors and journalists in Portland, Oregon are being tear-gassed and arreseted by federal officers.", "It's been months since EMT Breonna Taylor was shot and killed by police. Her killers? They're still walking free.", "New security laws by China are upending the very definition of democracy in Hong Kong. The CCP is cracking down on liberties like never before.", "China doesn't want the world to know that it is running Muslim concentration camps in Xinjiang. "]
+    
+    
+    @IBAction func learnBtnPressed(_ sender: UIButton) {
+        if let url = URL(string: "https://issuesintheworld.carrd.co/") {
+            UIApplication.shared.open(url)
+        }
 
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad();
-    }
+        }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -31,7 +39,7 @@ class TheWorldViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.eventImage.image = eventImage[indexPath.row]
         cell.eventDescription.text = eventDescription[indexPath.row]
         
-        cell.contentView.layer.cornerRadius = 4.0
+        cell.contentView.layer.cornerRadius = 25.0
         cell.contentView.layer.borderWidth = 1.0
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
         cell.contentView.layer.masksToBounds = false
