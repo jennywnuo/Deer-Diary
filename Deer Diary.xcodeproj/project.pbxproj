@@ -15,6 +15,7 @@
 		8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */; };
 		8ECB9F8024D1969E001AC428 /* WelcomePgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */; };
 		8EEF0F3924D1FD4E00D03D34 /* SlideinTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */; };
+		8EEF455124D48D2D001F3ED9 /* YemenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF455024D48D2D001F3ED9 /* YemenViewController.swift */; };
 		BA33044E24D3DE3D0062E1BA /* AddStickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33044D24D3DE3D0062E1BA /* AddStickerViewController.swift */; };
 		BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787924D0C21E0073FED3 /* AppDelegate.swift */; };
 		BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePgViewController.swift; sourceTree = "<group>"; };
 		8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideinTransition.swift; sourceTree = "<group>"; };
+		8EEF455024D48D2D001F3ED9 /* YemenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemenViewController.swift; sourceTree = "<group>"; };
 		BA33044D24D3DE3D0062E1BA /* AddStickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStickerViewController.swift; sourceTree = "<group>"; };
 		BA3E787624D0C21E0073FED3 /* Deer Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deer Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3E787924D0C21E0073FED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				8E07457124D1A27300F647A6 /* MenuViewController.swift */,
 				8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */,
 				BA6D8E4324D36AEE00E85086 /* TheWorldViewController.swift */,
+				8EEF455024D48D2D001F3ED9 /* YemenViewController.swift */,
 				8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */,
 			);
 			path = "View Controllers";
@@ -302,6 +305,7 @@
 			files = (
 				BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */,
 				8E9EB38D24D40DC10019B27A /* EventCollectionViewCell.swift in Sources */,
+				8EEF455124D48D2D001F3ED9 /* YemenViewController.swift in Sources */,
 				BA33044E24D3DE3D0062E1BA /* AddStickerViewController.swift in Sources */,
 				BA4DEF8D24D397C8007EE4E5 /* AddEventViewController.swift in Sources */,
 				BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */,

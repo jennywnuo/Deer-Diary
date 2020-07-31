@@ -242,6 +242,7 @@
                                                     <connections>
                                                         <action selector="learnBtn:" destination="8pO-mz-nxI" eventType="touchUpInside" id="c3g-Nb-Jvl"/>
                                                         <action selector="learnBtnPressed:" destination="U11-nD-h8Q" eventType="touchUpInside" id="jpx-ig-iSL"/>
+                                                        <segue destination="E1e-hV-4PZ" kind="show" identifier="goToYemen" id="c78-qY-t8J"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -269,6 +270,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44n-dZ-6Rf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2879.7101449275365" y="408.48214285714283"/>
+        </scene>
+        <!--Yemen View Controller-->
+        <scene sceneID="o10-As-hFv">
+            <objects>
+                <viewController id="E1e-hV-4PZ" customClass="YemenViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4G-KW-M1i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The Crisis in Yemen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrg-WA-2XH">
+                                <rect key="frame" x="71" y="104" width="273.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-kk-YXe">
+                                <rect key="frame" x="36" y="133" width="342" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6vd-Sm-Njf"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yemen2" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-9J-RSn">
+                                <rect key="frame" x="-393" y="157" width="1200" height="241"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What You Need To Know:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-gl-vMT">
+                                <rect key="frame" x="36" y="431" width="229" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-L0-Vhb">
+                                <rect key="frame" x="63" y="454" width="288" height="389"/>
+                                <mutableString key="text">Yemen is the largest humanitarian crisis in the world. Over 24 million people (80% of the population) is in need of humanitarian assistance, including more than 12 million children. Since the civil war escalated in March 2015, the country has become a living hell for the country’s children.
+
+With COVID-19 now spreading rapidly, Yemen is facing an emergency within an emergency. A lack of functional health care facilities, poor sanitation, and nonexistent pay for health care workers is making the Yemeni people extremely vulnerable to sickness.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.87450980392156863" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xDn-kk-YXe" firstAttribute="leading" secondItem="G4G-KW-M1i" secondAttribute="leadingMargin" constant="16" id="BAT-5u-7Dd"/>
+                            <constraint firstItem="xDn-kk-YXe" firstAttribute="top" secondItem="zrg-WA-2XH" secondAttribute="bottom" constant="8" id="EwE-Mx-YBi"/>
+                            <constraint firstItem="1bi-L0-Vhb" firstAttribute="centerX" secondItem="G4G-KW-M1i" secondAttribute="centerX" id="Z2j-T8-IIz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xDn-kk-YXe" secondAttribute="trailing" constant="16" id="gYA-0n-qO2"/>
+                            <constraint firstItem="hXR-9J-RSn" firstAttribute="centerX" secondItem="G4G-KW-M1i" secondAttribute="centerX" id="gkP-fa-az3"/>
+                            <constraint firstItem="zrg-WA-2XH" firstAttribute="centerX" secondItem="G4G-KW-M1i" secondAttribute="centerX" id="tJg-wy-iO4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rn2-xF-e2m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fqh-oG-6yE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLg-tw-NR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3788.4057971014495" y="400.44642857142856"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="7ue-lm-U2a">
@@ -800,6 +862,7 @@
         <image name="settings" width="50" height="50"/>
         <image name="theWorld" width="50" height="50"/>
         <image name="yemen" width="800" height="450"/>
+        <image name="yemen2" width="1200" height="1200"/>
         <namedColor name="Color">
             <color red="0.67100000381469727" green="0.64300000667572021" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

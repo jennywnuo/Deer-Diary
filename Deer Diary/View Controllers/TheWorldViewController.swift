@@ -18,10 +18,9 @@ class TheWorldViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     @IBAction func learnBtnPressed(_ sender: UIButton) {
-        if let url = URL(string: "https://issuesintheworld.carrd.co/") {
-            UIApplication.shared.open(url)
+        if eventName[0] == "Crisis in Yemen" {
+            self.performSegue(withIdentifier: "goToYemen", sender: self)
         }
-
     }
         
     override func viewDidLoad() {
