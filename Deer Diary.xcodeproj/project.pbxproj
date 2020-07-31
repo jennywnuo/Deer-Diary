@@ -11,6 +11,7 @@
 		8E07457224D1A27300F647A6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07457124D1A27300F647A6 /* MenuViewController.swift */; };
 		8E9EB38524D34C9C0019B27A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */; };
 		8E9EB38724D34CE60019B27A /* ScrollStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */; };
+		8E9EB38D24D40DC10019B27A /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EB38C24D40DC10019B27A /* EventCollectionViewCell.swift */; };
 		8EB94EB424D0D4D0002C9331 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */; };
 		8ECB9F8024D1969E001AC428 /* WelcomePgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */; };
 		8EEF0F3924D1FD4E00D03D34 /* SlideinTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */; };
@@ -49,6 +50,7 @@
 		8E07457124D1A27300F647A6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8E9EB38424D34C9C0019B27A /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		8E9EB38624D34CE60019B27A /* ScrollStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStepViewController.swift; sourceTree = "<group>"; };
+		8E9EB38C24D40DC10019B27A /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		8EB94EB324D0D4D0002C9331 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8ECB9F7F24D1969E001AC428 /* WelcomePgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePgViewController.swift; sourceTree = "<group>"; };
 		8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideinTransition.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				BA3E787B24D0C21E0073FED3 /* SceneDelegate.swift */,
 				8EEF0F3824D1FD4E00D03D34 /* SlideinTransition.swift */,
 				BA3E787F24D0C21E0073FED3 /* Main.storyboard */,
+				8E9EB38C24D40DC10019B27A /* EventCollectionViewCell.swift */,
 				BA3E788524D0C2200073FED3 /* Assets.xcassets */,
 				BA3E788724D0C2200073FED3 /* LaunchScreen.storyboard */,
 				BA3E788A24D0C2200073FED3 /* Info.plist */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA3E787A24D0C21E0073FED3 /* AppDelegate.swift in Sources */,
+				8E9EB38D24D40DC10019B27A /* EventCollectionViewCell.swift in Sources */,
 				BA33044E24D3DE3D0062E1BA /* AddStickerViewController.swift in Sources */,
 				BA4DEF8D24D397C8007EE4E5 /* AddEventViewController.swift in Sources */,
 				BA3E787C24D0C21E0073FED3 /* SceneDelegate.swift in Sources */,

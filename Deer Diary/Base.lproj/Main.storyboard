@@ -3,7 +3,9 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -182,20 +184,87 @@
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="115.84821428571428"/>
         </scene>
-        <!--The World View Controller-->
+        <!--The World-->
         <scene sceneID="xRO-Uf-lea">
             <objects>
                 <viewController id="U11-nD-h8Q" customClass="TheWorldViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1wh-xc-SoK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KZo-6C-Fcl">
+                                <rect key="frame" x="0.0" y="21" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.87450980392156863" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gA3-8J-1Bp">
+                                    <size key="itemSize" width="350" height="401"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="8pO-mz-nxI" customClass="EventCollectionViewCell" customModule="Deer_Diary" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="10" width="350" height="401"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QlM-Qw-lZk" customClass="EventCollectionViewCell" customModule="Deer_Diary" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="401"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yemen" translatesAutoresizingMaskIntoConstraints="NO" id="Evz-o5-liT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="193"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis in Yemen" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-gp-G3T">
+                                                    <rect key="frame" x="33" y="201" width="285" height="67"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is where you'll find a summary of what's going on ." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-VR-RVL">
+                                                    <rect key="frame" x="33" y="276" width="285" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sy-BC-b7e">
+                                                    <rect key="frame" x="33" y="355" width="92" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="Color"/>
+                                                    <state key="normal" title="Learn More">
+                                                        <color key="titleColor" red="0.91764705879999997" green="0.87450980389999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="learnBtn:" destination="8pO-mz-nxI" eventType="touchUpInside" id="c3g-Nb-Jvl"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="350" height="401"/>
+                                        <connections>
+                                            <outlet property="eventDescription" destination="YTR-VR-RVL" id="edZ-WJ-jNN"/>
+                                            <outlet property="eventImage" destination="Evz-o5-liT" id="onB-qq-0Ef"/>
+                                            <outlet property="eventName" destination="c9f-gp-G3T" id="onN-7s-4VK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="U11-nD-h8Q" id="R2D-LO-83m"/>
+                                    <outlet property="delegate" destination="U11-nD-h8Q" id="ecS-Pq-OvO"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.87450980392156863" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="9aI-KZ-MDD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="The World" id="0Wk-Nn-R5v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44n-dZ-6Rf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2880" y="409"/>
+            <point key="canvasLocation" x="2879.7101449275365" y="408.48214285714283"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="7ue-lm-U2a">
@@ -222,7 +291,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="U11-nD-h8Q" kind="presentation" identifier="goToTheWorld" modalPresentationStyle="fullScreen" id="YwV-mG-NLh"/>
+                        <segue destination="U11-nD-h8Q" kind="show" identifier="goToTheWorld" id="YwV-mG-NLh"/>
                         <segue destination="Tnk-gv-lnO" kind="show" identifier="goToAddEvent" id="tTm-pe-Sul"/>
                         <segue destination="CAJ-a0-fE3" kind="show" identifier="goToAddSticker" id="fvc-VV-p4I"/>
                     </connections>
@@ -726,5 +795,9 @@
         <image name="profile" width="50" height="50"/>
         <image name="settings" width="50" height="50"/>
         <image name="theWorld" width="50" height="50"/>
+        <image name="yemen" width="800" height="450"/>
+        <namedColor name="Color">
+            <color red="0.67100000381469727" green="0.64300000667572021" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
