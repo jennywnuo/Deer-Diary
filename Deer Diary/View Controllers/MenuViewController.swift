@@ -34,7 +34,6 @@ class MenuViewController: UITableViewController {
     }
     
     @IBAction func addNoteTapped(_ sender: UIButton) {
-        
     }
     
 

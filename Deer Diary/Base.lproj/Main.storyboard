@@ -15,10 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deer Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-mB-Wfn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-mB-Wfn">
                                 <rect key="frame" x="132" y="237" width="150" height="37"/>
-                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Deer Diary">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="30" name="Charter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-q3-atT">
@@ -175,28 +182,12 @@
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="115.84821428571428"/>
         </scene>
-        <!--My World View Controller-->
-        <scene sceneID="pdI-H7-Z0r">
-            <objects>
-                <viewController id="iLf-Ph-7G0" customClass="MyWorldViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AQB-vy-fnx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="DFg-wi-QJU"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="MPL-zd-jck"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U0T-hs-1qN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1719" y="88"/>
-        </scene>
         <!--The World View Controller-->
         <scene sceneID="xRO-Uf-lea">
             <objects>
                 <viewController id="U11-nD-h8Q" customClass="TheWorldViewController" customModule="Deer_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1wh-xc-SoK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9aI-KZ-MDD"/>
@@ -218,38 +209,11 @@
                                 <rect key="frame" x="0.0" y="782" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-qF-ZK1">
-                                <rect key="frame" x="0.0" y="847" width="414" height="49"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <items>
-                                    <barButtonItem image="text.badge.plus" catalog="system" width="91.5" id="mgM-gN-0Bi">
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <action selector="addNote:" destination="nCj-aU-SiW" id="7Mg-Hs-bFI"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem image="paperclip" catalog="system" width="109.5" id="JvI-oj-Af6">
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </barButtonItem>
-                                    <barButtonItem image="plus.rectangle.fill.on.rectangle.fill" catalog="system" width="132.5" id="asu-Kb-t47">
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </barButtonItem>
-                                    <barButtonItem image="arrow.up.to.line" catalog="system" width="89.5" id="GzV-6P-SWB">
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </barButtonItem>
-                                </items>
-                                <color key="barTintColor" red="0.80784313730000001" green="0.66274509800000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="bKh-qF-ZK1" firstAttribute="leading" secondItem="Mma-6w-SYp" secondAttribute="leading" id="e0G-Hf-mYX"/>
-                            <constraint firstItem="bKh-qF-ZK1" firstAttribute="trailing" secondItem="Mma-6w-SYp" secondAttribute="trailing" id="mKw-fB-ued"/>
-                            <constraint firstAttribute="bottom" secondItem="bKh-qF-ZK1" secondAttribute="bottom" id="vBs-tT-4FD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mma-6w-SYp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Notebook" largeTitleDisplayMode="never" id="HZj-g7-Tei">
+                    <navigationItem key="navigationItem" title="My Notebooks" largeTitleDisplayMode="never" id="HZj-g7-Tei">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="4JI-L2-WGK">
                             <color key="tintColor" red="0.12549019610000001" green="0.28627450980000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -258,13 +222,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="iLf-Ph-7G0" kind="presentation" identifier="goToMyWorld" id="MJO-7i-wxS"/>
-                        <segue destination="U11-nD-h8Q" kind="presentation" identifier="goToTheWorld" id="YwV-mG-NLh"/>
+                        <segue destination="U11-nD-h8Q" kind="presentation" identifier="goToTheWorld" modalPresentationStyle="fullScreen" id="YwV-mG-NLh"/>
+                        <segue destination="Tnk-gv-lnO" kind="show" identifier="goToAddEvent" id="tTm-pe-Sul"/>
+                        <segue destination="CAJ-a0-fE3" kind="show" identifier="goToAddSticker" id="fvc-VV-p4I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTL-h6-aUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="1130"/>
+            <point key="canvasLocation" x="1778" y="1001"/>
         </scene>
         <!--Scroll Step View Controller-->
         <scene sceneID="ZBF-na-gB1">
@@ -301,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbg-P7-HMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="1927"/>
+            <point key="canvasLocation" x="1719" y="2367"/>
         </scene>
         <!--Scroll View Controller-->
         <scene sceneID="i6W-4b-85e">
@@ -327,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOT-QB-fDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="1930"/>
+            <point key="canvasLocation" x="2590" y="2367"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="ekm-qL-6Ar">
@@ -564,16 +529,202 @@
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="851.78571428571422"/>
         </scene>
+        <!--Add Event-->
+        <scene sceneID="ITf-w4-Eo4">
+            <objects>
+                <viewController id="Tnk-gv-lnO" customClass="AddEventViewController" customModule="Deer_Diary" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4e-yh-DCg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lo-K6-e6N">
+                                <rect key="frame" x="132" y="195" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-xD-f38">
+                                <rect key="frame" x="41" y="153" width="333" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Name of Event">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="16" name="Charter-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                <connections>
+                                    <action selector="efwefrwe:" destination="ZRl-Cb-h6e" eventType="editingDidEnd" id="KD1-00-EbC"/>
+                                    <action selector="efwfe:" destination="ZRl-Cb-h6e" eventType="editingDidEnd" id="fcr-Lv-q9j"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Additional Notes" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HND-9P-5Ir">
+                                <rect key="frame" x="41" y="307" width="333" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6J-Es-KdZ">
+                                <rect key="frame" x="41" y="231" width="143" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Start Time">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="16" name="Charter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Az0-WY-bpV">
+                                <rect key="frame" x="231" y="231" width="143" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="End Time">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="16" name="Charter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3F-9w-fn0">
+                                <rect key="frame" x="41" y="555" width="333" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.66274509800000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add This Event">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="20" name="Charter-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addTapped:" destination="Tnk-gv-lnO" eventType="touchUpInside" id="3Sk-MR-gnr"/>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qd9-8h-c9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098040000001" green="0.52156862749999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="ToN-lD-CWy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Event" id="SyR-a6-eW6">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="PAR-1x-blh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addNotes" destination="HND-9P-5Ir" id="g9T-1s-ZbP"/>
+                        <outlet property="endTime" destination="Az0-WY-bpV" id="UeM-sW-V41"/>
+                        <outlet property="nameofEvent" destination="Hmr-xD-f38" id="FVj-3r-bpN"/>
+                        <outlet property="startTime" destination="Q6J-Es-KdZ" id="XQc-X4-jM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFD-07-f7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZRl-Cb-h6e" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="289"/>
+        </scene>
+        <!--Select a Sticker-->
+        <scene sceneID="Vaj-SV-YFJ">
+            <objects>
+                <viewController id="CAJ-a0-fE3" customClass="AddStickerViewController" customModule="Deer_Diary" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5w-HG-HLa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWX-68-Yb7">
+                                <rect key="frame" x="41" y="148" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower5"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g0-5p-XAO">
+                                <rect key="frame" x="41" y="311" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv6-AH-UT4">
+                                <rect key="frame" x="41" y="480" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower6"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-lW-LC6">
+                                <rect key="frame" x="259" y="480" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98M-uC-bh7">
+                                <rect key="frame" x="259" y="311" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygL-cd-0ps">
+                                <rect key="frame" x="259" y="148" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="flower2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-J2-zrd">
+                                <rect key="frame" x="41" y="667" width="333" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.66274509800000003" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add this Sticker">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="20" name="Charter-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addStickerTapped:" destination="CAJ-a0-fE3" eventType="touchUpInside" id="GRH-8N-oaK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098040000001" green="0.52156862749999999" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="0oS-cO-M2q"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select a Sticker" id="5A7-7w-IdD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvS-Y6-FFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282.608695652174" y="1689.5089285714284"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="arrow.up.to.line" catalog="system" width="128" height="128"/>
+        <image name="flower" width="220" height="200"/>
+        <image name="flower2" width="420" height="460"/>
+        <image name="flower3" width="550" height="550"/>
+        <image name="flower4" width="300" height="300"/>
+        <image name="flower5" width="300" height="300"/>
+        <image name="flower6" width="550" height="550"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="myWorldShelf" width="50" height="50"/>
-        <image name="paperclip" catalog="system" width="128" height="128"/>
-        <image name="plus.rectangle.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
         <image name="profile" width="50" height="50"/>
         <image name="settings" width="50" height="50"/>
-        <image name="text.badge.plus" catalog="system" width="128" height="109"/>
         <image name="theWorld" width="50" height="50"/>
     </resources>
 </document>
